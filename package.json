@@ -1,44 +1,45 @@
 {
-	"name": "cinovo-isin-validator",
-	"version": "0.2.0",
-	"description": "International Securities Identification Number validator",
-	"keywords": [
-		"ISIN",
-		"International",
-		"Securities",
-		"Identification",
-		"Number",
-		"validator"
-	],
-	"author": {
-		"name": "Michael Wittig",
-		"email": "post@michaelwittig.info"
-	},
-	"contributors": [],
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/michaelwittig/node-isin-validator.git"
-	},
-	"dependencies": {
-		"assert-plus": "0.1.5",
-		"i18n-iso-countries": "0.0.2"
-	},
-	"devDependencies": {
-		"mocha": "1.15.1",
-		"jslint": "0.2.5",
-		"madge": "0.1.7",
-		"npmedge": "0.1.4"
-	},
-	"main": "index",
-	"engines": {
-		"node": ">= 0.6.0"
-	},
-	"scripts": {
-		"test": "make test"
-	},
-	"readmeFilename": "README.md",
-	"bugs": {
-		"url": "https://github.com/michaelwittig/node-isin-validator/issues"
-	}
+  "name": "cinovo-isin-validator",
+  "version": "0.2.0",
+  "description": "International Securities Identification Number validator",
+  "keywords": [
+    "ISIN",
+    "International",
+    "Securities",
+    "Identification",
+    "Number",
+    "validator"
+  ],
+  "author": {
+    "name": "Michael Wittig",
+    "email": "post@michaelwittig.info"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelwittig/node-isin-validator.git"
+  },
+  "dependencies": {
+    "assert-plus": "0.1.5"
+  },
+  "devDependencies": {
+    "i18n-iso-countries": "^6.2.2",
+    "jslint": "0.2.5",
+    "madge": "0.1.7",
+    "mocha": "1.15.1",
+    "npmedge": "0.1.4"
+  },
+  "main": "index",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "install": "node script/generate-country-list.js",
+    "test": "make test"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/michaelwittig/node-isin-validator/issues"
+  }
 }
